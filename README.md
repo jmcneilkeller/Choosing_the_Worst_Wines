@@ -24,7 +24,7 @@ White wine:
 * Quality scores ranged between 3-9.
 * 171 'poor’ quality wines
 
-For this experiment wines rated as either a 3 or 4 were considered 'poor'.
+**For this experiment wines rated as either a 3 or 4 were considered 'poor'.**
 
 In order to correct the major class imbalance (see below), I upsampled both datasets using SMOTE. The minority class represented 15% of each of the final datasets after upsampling. 
 

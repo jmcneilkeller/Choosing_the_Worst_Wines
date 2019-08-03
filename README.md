@@ -2,7 +2,7 @@
 
 ## 1. The question
 
-It's been proven time and time and time again that most human beings aren't really that good at differentiating between good and mediocre wine, or even between types of wine. If you are the average restaurant owner, it stands to reason that all you really need to do is avoid the detectably bad wines and anything else you buy should be generally fine.
+It's been proven [time](https://www.theguardian.com/lifeandstyle/2013/jun/23/wine-tasting-junk-science-analysis) and [time](http://www.daysyn.com/Morrot.pdf) and [time](https://www.theguardian.com/science/2011/apr/14/expensive-wine-cheap-plonk-taste) again that most human beings aren't really that good at differentiating between good and mediocre wine, or even between types of wine. If you are the average restaurant owner, it stands to reason that all you really need to do is avoid the detectably bad wines and anything else you buy should be generally fine.
 
 Our question then is: Can we determine detectably bad wines from their chemical composition?
 
@@ -61,13 +61,13 @@ Given that I was aiming to find the worst wines, I optimized my models towards a
 
 Red
 * Logistic Regression w/Polynomial Features
-  * Accuracy: .79
-  * Recall: .62
+  * Accuracy: **.79**
+  * Recall: **.62**
 
 White
 * Logistic Regression w/Polynomial Features
-  * Accuracy: .83
-  * Recall: .70
+  * Accuracy: **.83**
+  * Recall: **.70**
 
 The results are not quite as I had hoped. I believe the major problem is the dataset class imbalance. I hope to improve this model with additional data. 
 

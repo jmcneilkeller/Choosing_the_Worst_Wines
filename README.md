@@ -26,14 +26,21 @@ White wine:
 
 For this experiment wines rated as either a 3 or 4 were considered 'poor'.
 
-In order to correct the major class imbalance, I upsampled both datasets using SMOTE. The minority class represented 15% of each of the final datasets after upsampling.
+In order to correct the major class imbalance (see below), I upsampled both datasets using SMOTE. The minority class represented 15% of each of the final datasets after upsampling. 
+
+![](https://github.com/jmcneilkeller/Choosing_the_Worst_Wines/blob/master/images/class_imbalance.png)
 
 ## 3. Features
 
 ### Sulfure dioxide
+
 Sulfur dioxide is added to wines in order to reduce oxidation and to create an unhealthy environment for yeast so that the wine retains its sugars. A wine with a higher pH will require more SO2. However, if too much sulfur dioxide is added to the wine, it can noticeably impact the taste.
 
 I engineered features to measure the amount of Molecular SO2 (the SO2 that is active in fighting yeast and oxidation) and Bound SO2 (inert SO2) in addition to the existing Free SO2 and Total SO2 features.
+
+Free sulfur dioxide distribution:
+
+![](https://github.com/jmcneilkeller/Choosing_the_Worst_Wines/blob/master/images/so2.png)
 
 ### pH
 
@@ -54,12 +61,16 @@ Given that I was aiming to find the worst wines, I optimized my models towards a
 
 Red
 * Logistic Regression w/Polynomial Features
-** Accuracy: .79
-** Recall: .62
+  * Accuracy: .79
+  * Recall: .62
 
 White
 * Logistic Regression w/Polynomial Features
-** Accuracy: .83
-** Recall: .70
+  * Accuracy: .83
+  * Recall: .70
 
 The results are not quite as I had hoped. I believe the major problem is the dataset class imbalance. I hope to improve this model with additional data. 
+
+Final confusion matrices:
+
+![](https://github.com/jmcneilkeller/Choosing_the_Worst_Wines/blob/master/images/confusion_matrices.png)
